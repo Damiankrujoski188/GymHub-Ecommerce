@@ -258,3 +258,91 @@ footer ul li a {
 footer ul li a:hover {
     color: var(--color-azul);
 }
+
+/* =====================
+    CONTACTO
+   ===================== */
+#contacto {
+    background-color: var(--color-blanco);
+    max-width: 100%;
+    padding: 50px 20px;
+}
+
+#contacto h2 {
+    max-width: 600px;
+    margin: 0 auto 10px;
+}
+
+#contacto > p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: var(--color-gris-texto);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    font-weight: 700;
+    color: var(--color-negro);
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #bcc5d0;
+    border-radius: 4px;
+    font-family: var(--fuente-cuerpo);
+    background-color: #f5f7fa;
+    color: #222;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--color-azul);
+    
+}
+
+form button {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    padding: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fuente-titulo);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background-color: var(--color-negro);
+}
+
+.info-contacto {
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+.info-contacto p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+.info-contacto img{
+    width: 20px;
+    height: 20px;    
+}
+
