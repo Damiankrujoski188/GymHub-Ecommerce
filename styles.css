@@ -39,6 +39,7 @@ body {
 header {
     background-color: var(--color-negro);
     padding: 15px 30px;
+    border-bottom: 1px solid #48486d;
 }
 
 .header-inner {
@@ -346,3 +347,31 @@ form button:hover {
     height: 20px;    
 }
 
+/* =====================
+    MEDIA QUERIES
+   ===================== */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #inicio h2 {
+        font-size: 4rem;
+    }
+}
