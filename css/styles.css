@@ -31,6 +31,7 @@ body {
     font-family: var(--fuente-cuerpo);
     background-color: var(--color-fondo);
     color: var(--color-negro);
+    
 }
 
 /* =====================
@@ -260,7 +261,7 @@ footer ul {
     justify-content: center;
     gap: 20px;
     padding: 0;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 footer ul li a {
@@ -276,9 +277,20 @@ footer ul li a:hover {
 /*  =========================================================================
     =============================== CONTACTO ================================
     ========================================================================= */
-#contacto {
+
+.body-contacto{
     background-color: var(--color-blanco);
-    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-contacto{
+    flex: 1;
+}
+
+#contacto {
+    width: 100%;
     padding: 50px 20px;
 }
 
@@ -367,10 +379,18 @@ form button:hover {
 
 .body-carrito{
     background-color: var(--color-blanco);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-carrito{
+    flex: 1;
 }
 
 #carrito-compra{
-    min-height: 74vh;
+    /* min-height: 74vh; */
+    padding: 50px 20px;
     max-width: 100%;
     padding: 50px 20px;
 }
