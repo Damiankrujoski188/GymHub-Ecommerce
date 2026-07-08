@@ -1,0 +1,70 @@
+[
+    {
+        "id": "1",
+        "nombre": "Mancuerna",
+        "img": "img/mancuerna.webp", 
+        "descripcion" :"Mancuerna de PVC Rellenas 8kg. Ideal para musculacion en casa",
+        "precio": 4000
+    },
+    
+    {
+        "id": "2", 
+        "nombre": "Bicicleta fija", 
+        "img": "img/bike_fija.webp", 
+        "descripcion" : "Bicicleta fija magnética con monitor de frecuencia cardíaca y pantalla LCD", 
+        "precio": 8000
+    },
+
+    {
+        "id": "3", 
+        "nombre": "Banco de Pesas", 
+        "img": "img/banco.webp",
+        "descripcion": "Banco plano reforzado marca Randers. Soporta hasta 150kg",
+        "precio": 38000
+    },
+        
+    {
+        "id": "4", 
+        "nombre": "Soga para saltar", 
+        "img": "img/soga_de_saltar.webp",
+        "descripcion": "Soga de Salto de Alta Velocidad RPM Cable de Acero", 
+        "precio": 6500
+    },
+
+    {
+        "id": "5", 
+        "nombre": "Seguro para discos", 
+        "img": "img/seguros_discos.webp", 
+        "descripcion": "Seguros topes tijera para barra olimpica de 50 mm",
+        "precio": 6000
+    },
+    
+    {
+        "id": "6", 
+        "nombre": "Discos Olimpícos", 
+        "img": "img/disco_olimpicos.webp", 
+        "descripcion": "Discos olimpico 50 mm con recubrimiento de caucho vulcanizado para mayor durabilidad",
+        "precio": 12000
+    },
+    {
+        "id": "7", 
+        "nombre": "Guantes Gimnasio", 
+        "img": "img/guantes_gimnasio.webp", 
+        "descripcion": "Par De Guantes Fitness Deportivos Entrenamiento Pesas",
+        "precio": 2500
+    },
+    {
+        "id": "8", 
+        "nombre": "Botella Deportiva", 
+        "img": "img/botella_gimnasio.webp", 
+        "descripcion": "Botella Pico Deportiva Sport Gimnasia Gym Gimnasio Bicicleta",
+        "precio": 4500
+    },
+    {
+        "id": "9", 
+        "nombre": "Pedalera Rehabilitacion", 
+        "img": "img/pedalera_gimnasio.webp", 
+        "descripcion": "Pedalera Rehabilitacion Kinesiologia Fitness Gimnasia",
+        "precio": 32000
+    }
+]

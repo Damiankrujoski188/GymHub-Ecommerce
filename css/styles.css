@@ -113,7 +113,7 @@ section h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(13, 27, 42, 0.75), rgba(0, 0, 0, 0.75)), url(img/img_hero.png);
+    background-image: linear-gradient(rgba(13, 27, 42, 0.75), rgba(0, 0, 0, 0.75)), url(../img/img_hero.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -156,9 +156,9 @@ section h2 {
     padding: 6px 20px;
 }
 
-/* =====================
-    PRODUCTOS (GRID)
-   ===================== */
+/*  =========================================================================
+    =============================== PRODUCTOS ===============================
+    ========================================================================= */
 #productos {
     background-color: var(--color-blanco);
     max-width: 100%;
@@ -168,9 +168,10 @@ section h2 {
 #productos h2 {
     max-width: 1100px;
     margin: 0 auto 25px;
+    text-align: center;
 }
 
-.cards {
+.contenedor-tarjetas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -186,6 +187,15 @@ section h2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: background-color 0.2s ease, transform 0.3s ease-in-out;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: #fffae66e;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
 }
 
 .card img {
@@ -215,9 +225,10 @@ section h2 {
     color: var(--color-azul-oscuro) !important;
 }
 
-.card a {
+.card button {
     display: inline-block;
     background-color: var(--color-azul-oscuro);
+    border: none;
     color: var(--color-blanco);
     padding: 9px 16px;
     text-decoration: none;
@@ -225,15 +236,17 @@ section h2 {
     text-align: center;
     font-weight: 700;
     margin-top: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
-.card a:hover {
-    background-color: var(--color-negro);
+.card button:hover {
+    background-color: var(--color-azul);
 }
 
-/* =====================
-    FOOTER
-   ===================== */
+/*  =========================================================================
+    ================================= FOOTER ================================
+    ========================================================================= */
 footer {
     background-color: var(--color-negro);
     color: #aaa;
@@ -260,9 +273,9 @@ footer ul li a:hover {
     color: var(--color-azul);
 }
 
-/* =====================
-    CONTACTO
-   ===================== */
+/*  =========================================================================
+    =============================== CONTACTO ================================
+    ========================================================================= */
 #contacto {
     background-color: var(--color-blanco);
     max-width: 100%;
@@ -347,9 +360,158 @@ form button:hover {
     height: 20px;    
 }
 
-/* =====================
-    MEDIA QUERIES
-   ===================== */
+
+/*  ==============================================================================
+    =============================== CARRITO COMPRA ===============================
+    ============================================================================== */
+
+.body-carrito{
+    background-color: var(--color-blanco);
+}
+
+#carrito-compra{
+    min-height: 74vh;
+    max-width: 100%;
+    padding: 50px 20px;
+}
+
+#carrito-compra h2{
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+/* div */
+.contenedor-tarjetas-carrito{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Article */
+.tarjeta-carrito{
+    display: grid;
+    grid-template-columns: 100px 140px 1fr 100px 180px;
+    align-items: center;
+    column-gap: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tarjeta-carrito:hover {
+    background-color: #fffae66e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-carrito img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-self: center;
+}
+
+.tarjeta-carrito h3{
+    font-size: 1.1rem;
+}
+
+.tarjeta-carrito p{
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+.btn-eliminar-carrito{
+    background-color: #b02a2a;
+    color: var(--color-blanco);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    justify-self: end;
+    white-space: nowrap;
+    
+}
+
+.btn-eliminar-carrito:hover{
+    background-color: #8c2020;
+}
+
+
+
+.mensaje-carrito-vacio {
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-blanco);
+    background-color: var(--color-azul-oscuro);
+    border-radius: 6px;
+    padding: 60px 20px;
+    margin: 0;
+}
+
+/* BOTONES */
+
+.acciones-carrito{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.btn-vaciar-carrito {
+    width: 180px;
+    background-color: #b02a2a;
+    color: var(--color-blanco);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-vaciar-carrito:hover {
+    background-color: #8c2020;
+}
+
+.btn-finalizarCompra-carrito{
+    width: 180px;
+    background-color: #403F6F;
+    color: var(--color-blanco);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-finalizarCompra-carrito:hover{
+    background-color: #403f6fc6 ;
+}
+
+/*  =============================================================================
+    =============================== MEDIA QUERIES ===============================
+    ============================================================================= */
 @media (max-width: 900px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -373,5 +535,39 @@ form button:hover {
 
     #inicio h2 {
         font-size: 4rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .tarjeta-carrito{
+        grid-template-columns: 100px 1fr;
+        grid-template-areas:
+            "img nombre"
+            "img descripcion"
+            "img precio"
+            "boton boton";
+    }
+
+    .tarjeta-carrito img{
+        grid-area: img;
+    }
+
+    .tarjeta-carrito h3{
+        grid-area: nombre;
+    }
+
+    .descripcion{
+        grid-area: descripcion;
+    }
+
+    .precio{
+        grid-area: precio;
+        font-weight: bold;
+    }
+
+    .btn-eliminar-carrito{
+        grid-area: boton;
+        justify-self: center;
     }
 }

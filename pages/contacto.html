@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymHub - Contacto</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title id="titulo">GymHub - Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,8 +14,17 @@
             <h1><a href="../index.html">GYM<span class="text-azul">HUB</span></a></h1>
             <nav>
                 <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li>
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contacto.html">CONTACTO</a>
+                    </li>
+
+                    <li>
+                        <a href="carrito.html" class = "carrito-icono">🛒<span id="contador-carrito">0</span></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -54,10 +63,16 @@
     <footer>
         <p>&copy; Sitio realizado por Damian Luna para Talento Tech. Todos los derechos reservados.</p>
         <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li>
+                <a href="../index.html">HOME</a>
+            </li>
+            
+            <li>
+                <a href="contacto.html">CONTACTO</a>
+            </li>
         </ul>
     </footer>
+    <script src="../js/contacto.js" type="module"></script>
 
 </body>
 </html>

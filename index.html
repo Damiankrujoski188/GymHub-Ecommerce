@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymHub - Tienda</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,15 +14,23 @@
             <h1><a href="index.html">GYM<span class="text-azul">HUB</span></a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="pages/contacto.html">CONTACTO</a></li>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    
+                    <li>
+                        <a href="pages/contacto.html">CONTACTO</a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/carrito.html" class = "carrito-icono">🛒<span id="contador-carrito">0</span></a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-
         <section id="inicio">
             <div class="hero-badge">EQUIPAMIENTO DEPORTIVO</div>
             <h2>GYM<span class="text-azul">HUB</span></h2>
@@ -33,9 +41,9 @@
         <section id="productos">
             <h2>Nuestros Productos</h2>
 
-            <div class="cards">
+            <div id="contenedor-tarjetas" class = "contenedor-tarjetas" >
 
-                <article class="card">
+                <!-- <article class="card">
                     <img src="img/mancuerna.webp" alt="Mancuerna Hexagonal">
                     <h3>Mancuerna</h3>
                     <p>Mancuerna de PVC Rellenas 8kg. Ideal para musculacion en casa</p>
@@ -81,9 +89,11 @@
                     <p>Discos olimpico 50 mm con recubrimiento de caucho vulcanizado para mayor durabilidad.</p>
                     <p class="precio">$12.000</p>
                     <a href="#">Agregar al carrito</a>
-                </article>
+                </article> -->
 
+                
             </div>
+
         </section>
 
     </main>
@@ -95,6 +105,8 @@
             <li><a href="pages/contacto.html">CONTACTO</a></li>
         </ul>
     </footer>
+    
+    <script type="module" src="./js/index.js" ></script>
 
 </body>
 </html>
