@@ -479,9 +479,10 @@ form button:hover {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-blanco);
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-negro);
+    box-shadow: 0px 4px 30px 3px var(--color-negro);
     border-radius: 6px;
-    padding: 60px 20px;
+    padding: 30px 20px;
     margin: 0;
 }
 
@@ -496,6 +497,24 @@ form button:hover {
 
 }
 
+.total-container{
+    display: flex;
+    border-top: 2px solid #ccc;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.total-texto{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.total-precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-azul-oscuro);
+}
 
 .btn-vaciar-carrito {
     width: 180px;

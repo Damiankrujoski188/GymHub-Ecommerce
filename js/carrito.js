@@ -4,6 +4,7 @@ import { actualizarContador } from "./ui.js";
 
 const renderizarCarrito = () => {
     const carrito = obtenerCarrito();
+    console.log(carrito);
     actualizarContador(carrito);
 
     const contenedor = document.getElementById("contenedor-carrito");
@@ -40,6 +41,9 @@ const renderizarCarrito = () => {
         precio.classList.add("precio")
         precio.textContent = `$${producto.precio}`;
 
+        
+
+
         const btnEliminar = document.createElement("button");
         // btnEliminar.classList.add("btn");
         btnEliminar.classList.add("btn-eliminar-carrito");
@@ -60,6 +64,21 @@ const renderizarCarrito = () => {
         contenedor.appendChild(tarjeta);
     });
 
+    const total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+    
+    const divTotal = document.createElement("div");
+    divTotal.classList.add("total-container");
+
+    const textoTotal = document.createElement("p");
+    textoTotal.classList.add("total-texto");
+    textoTotal.textContent = "Precio total de productos:";
+
+    const precioTotal = document.createElement("p");
+    precioTotal.classList.add("total-precio");
+    precioTotal.textContent = `$${total}`;
+
+
+
     const btnVaciar = document.createElement("button");
     btnVaciar.classList.add("btn-vaciar-carrito");
     btnVaciar.textContent = "Vaciar Carrito";
@@ -78,7 +97,9 @@ const renderizarCarrito = () => {
         renderizarCarrito();
     })
 
-
+    divAcciones.appendChild(divTotal);
+    divTotal.appendChild(textoTotal);
+    divTotal.appendChild(precioTotal);
     divAcciones.appendChild(btnVaciar);
     divAcciones.appendChild(btnFinalizarCompra);
 
